@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+	<title>jQuery Mobile Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+        
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<style> .dragimg {width:50px;height:50px}</style>
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.8.24/jquery-ui.min.js"></script>
+       
+
+  	<!-- (Start) Add jQuery UI Touch Punch -->
+  	<script src="jquery.ui.touch-punch.min.js"></script>
+  	<!-- (End) Add jQuery UI Touch Punch -->
+  
+
+</head>
+<body>
+<section data-role="page" id="pageone"><!--Home Page-->
+	<header data-role="header">
+		<h4>Page header</h4>
+	</header><!-- /header -->
+	<div data-role="controlgroup" data-type="horizontal" style="text-align:center" >                 
+		        <a class="num" data-role="buttonimage"><img src="number0.png" alt="number0" style="width:50px;height:50px;"/a>
+ 		        <a class="num" data-role="buttonimage"><img src="number1.png" alt="number1" style="width:50px;height:50px;"/a>
+			<a class="num" data-role="buttonimage"><img src="number2.png" alt="number2" style="width:50px;height:50px;"/a>
+                        <a class="num" <a href="#pagetwo"><data-role="buttonimage"><img src="number3.png" alt="number3" style="width:50px;height:50px;"/a></a>
+                        <a class="num" data-role="buttonimage"><img src="number4.png" alt="number4" style="width:50px;height:50px;"/a>
+                        <a class="num" <data-role="buttonimage"><img src="number5.png" alt="number5" style="width:50px;height:50px;"/a>
+                        <a class="num" data-role="buttonimage"><img src="number6.png" alt="number6" style="width:50px;height:50px;"/a>
+                        <a class="num" data-role="buttonimage"><img src="number7.png" alt="number7" style="width:50px;height:50px;"/a>
+                        <a class="num" data-role="buttonimage"><img src="number8.png" alt="number8" style="width:50px;height:50px;"/a>
+                        <a class="num" data-role="buttonimage"><img src="number9.png" alt="number9" style="width:50px;height:50px;"/a>
+		        </div>              
+                <h1><center><font size="200%" color="black"> 3    +    0   =   ? </font></center></h1>
+                <div style="background-color:white;">
+		<img class="dragimg" src="apple.png" alt="apple"/>
+	        <img class="dragimg" src="apple.png" alt="apple"/>
+		<img class="dragimg" src="apple.png" alt="apple"/>
+		<img class="dragimg" src="apple.png" alt="apple"/>
+		<img class="dragimg" src="apple.png" alt="apple"/>
+		<img class="dragimg" src="apple.png" alt="apple"/>
+		<img class="dragimg" src="apple.png" alt="apple"/> 
+		<img class="dragimg" src="apple.png" alt="apple"/>
+                <img class="dragimg" src="apple.png" alt="apple"/>
+		</div>
+	        <div id="plate" style="background-color:white;">
+		<img id="plate" src="plate_white.png" alt="plate_white" style="width:280px;height:280px;">
+		</div>
+                
+                
+
+	<footer data-role="footer">
+		<h4>Page footer</h4>
+	</footer><!-- /footer -->
+</section><!-- /page -->
+
+<div  data-role="page" id="pagetwo"><!--2nd Page-->
+  <div data-role="header">
+    <h1>Welcome To My Homepage</h1>
+  </div>
+
+  <div style="background-color:white;">
+  <div data-role="main" class="ui-content">
+ 
+  <br>
+  </div>
+  <div id="star">
+  <img id="star" src="star_kids.png" alt="star_kids" style="width:50px;height:50px;">
+  </div>
+  </br>
+  
+  <div>
+  <img id="star" src="star_kids.png" alt="star_kids" style="float:right;width:50px;height:50px;">
+  </div> 
+  
+
+
+
+<br>
+<div>
+<p><center><font size="300%" color="red">3    +    0   =   3 </font></center></p>
+</div> 
+</br>
+
+ <br>
+  <div>
+    <img id="thumb" src="thumbs_up.png" alt="thumbs_up" style="float:left;width:60px;height:60px;">
+  <div/>
+
+  <div>
+    <a href="thirdrandomquiz.html" rel="external" data-ajax="false" class="ui-btn"><img src="play_again.png" alt="play_again" style="width:100px;height:100px;"></a>
+  </div>
+ </br>
+
+<div>
+     <img id="star" src="star_kids.png" alt="star_kids" style="float:centre;width:100px;height:100px;">
+</div> 
+
+
+
+<br>
+<div>
+     <img id="star" src="star_kids.png" alt="star_kids" style="float:right;width:100px;height:100px;">
+</div> 
+</br>
+
+ <div data-role="footer">
+ <h4>Page footer</h4>
+ </div>
+
+<div  data-role="page" id="pagethree"> <!--3rd Page-->
+  <div data-role="header">
+    <h1>Welcome To My Homepage</h1>
+  </div>
+		
+              
+	
+<script>
+$(".num").click(function() {
+            ($(this).text());
+        });
+
+$(document).ready(function() {
+$(".dragimg").draggable();
+});
+
+
+
+</script>
+</body>
+</html>
